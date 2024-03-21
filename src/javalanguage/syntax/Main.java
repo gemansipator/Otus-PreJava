@@ -7,11 +7,12 @@ public class Main {
         //boolean (1), char (2), float (4), double (8)
 
 
-        boolean a = true;
+        char a = '?';
         System.out.println("a = " + a);
-        boolean b = true;
-        System.out.println("b = " + b);
-        //printBinary(a, 64);
+        printBinary(a, 16);
+        a = '\u03B1';                  // в Java тип данных char задается в UTF-8 всегда
+        System.out.println("a = " + a);
+        printBinary(a, 16);
 
     }
     private static void printBinary(long value, int size){ //берется количество байт, и размер В БИТАХ,
