@@ -15,7 +15,7 @@ public class Main {
         a = -128;   //минимум  -128
         printBinary(a, 8);
     }
-    private static void printBinary(byte value, int size){ //берется байт, и размер В БИТАХ,
+    private static void printBinary(byte value, int size){ //берется количество байт, и размер В БИТАХ,
         for (int i = size -1; i >= 0; i--){
             long mask = 1 << i;
             long result = (mask & value) >> i;
