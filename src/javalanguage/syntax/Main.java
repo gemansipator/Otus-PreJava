@@ -4,11 +4,14 @@ public class Main {
     public static void main(String[] args) {
         //System.out.println("Hello world II!");
         //byte (1 байт или 8 бит), short (2 байта), int (4 байта или 32 бита), long  (8 байт)
+        //boolean (1), char (2), float (4), double (8)
 
 
-        long a = Long.MAX_VALUE;
+        boolean a = true;
         System.out.println("a = " + a);
-        printBinary(a, 64);
+        boolean b = true;
+        System.out.println("b = " + b);
+        //printBinary(a, 64);
 
     }
     private static void printBinary(long value, int size){ //берется количество байт, и размер В БИТАХ,
