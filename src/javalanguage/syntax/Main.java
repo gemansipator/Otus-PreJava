@@ -6,8 +6,28 @@ public class Main {
         //byte (1 байт или 8 бит), short (2 байта), int (4 байта или 32 бита), long  (8 байт)
         //boolean (1), char (2), float (4), double (8)
 
-        double a = 37.1;
-        System.out.println("a = " + a);
+        //Преобразование типов НЕ ЯВНОЕ
+
+        byte a = 127;
+        short s = a;
+        long d = s;
+        System.out.println(a +" "+ s +" "+ d);
+
+
+        //Преобразование типов ЯВНОЕ
+        byte a1 = 127;
+        short s1 = (short) a1;
+        long d1 = (long) s1;
+        System.out.println(a1 +" "+ s1 +" "+ d1);
+
+        //Преобразование типов ЯВНОЕ ОБРАТНОЕ   (могут быть  ошибки когда число слишком большое)
+        long a2 = 1276343434;
+        short s2 = (short) a2;
+        int d2 = (int) s2;
+        byte r2 = (byte) d2;
+        System.out.println(a2 +" "+ s2 +" "+ d2+" "+ r2);
+
+
         //printBinary(a, 16);
 
 
