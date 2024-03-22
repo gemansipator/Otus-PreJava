@@ -6,13 +6,10 @@ public class Main {
         //byte (1 байт или 8 бит), short (2 байта), int (4 байта или 32 бита), long  (8 байт)
         //boolean (1), char (2), float (4), double (8)
 
+        float a = 37.1f;
+        System.out.println("a = " + a);
+        //printBinary(a, 16);
 
-        char a = '?';
-        System.out.println("a = " + a);
-        printBinary(a, 16);
-        a = '\u03B1';                  // в Java тип данных char задается в UTF-8 всегда
-        System.out.println("a = " + a);
-        printBinary(a, 16);
 
     }
     private static void printBinary(long value, int size){ //берется количество байт, и размер В БИТАХ,
