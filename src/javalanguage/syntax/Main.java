@@ -6,7 +6,7 @@ public class Main {
         //byte (1 байт или 8 бит), short (2 байта), int (4 байта или 32 бита), long  (8 байт)
         //boolean (1), char (2), float (4), double (8)
 
-        float a = 37.1f;
+        double a = 37.1;
         System.out.println("a = " + a);
         //printBinary(a, 16);
 
